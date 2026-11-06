@@ -47,7 +47,7 @@ function renderProducts() {
     const article = document.createElement('article'); article.className = 'product-card';
     const symbol = document.createElement('span'); symbol.className = 'product-symbol'; symbol.setAttribute('aria-hidden', 'true'); symbol.textContent = product.symbol;
     const title = document.createElement('h3'); title.textContent = product.name;
-    const link = document.createElement('a'); link.className = 'text-link'; link.href = channels.deportes.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Consultar disponibilidad ↗'; link.setAttribute('aria-label', `Consultar disponibilidad de ${product.name} por WhatsApp`);
+    const link = document.createElement('a'); link.className = 'text-link'; link.href = channels.deportes.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Consultar ↗'; link.setAttribute('aria-label', `Consultar disponibilidad de ${product.name} por WhatsApp`);
     article.append(symbol, title, link); return article;
   });
   document.querySelector('#product-grid').replaceChildren(...cards);
@@ -63,7 +63,6 @@ function setChannel(key) {
   const channel = channels[key] || channels.atencion;
   contactArea.value = Object.hasOwn(channels, key) ? key : 'atencion';
   document.querySelector('#contact-link').href = channel.url;
-  document.querySelector('#contact-description').textContent = channel.description;
 }
 contactArea.addEventListener('change', () => setChannel(contactArea.value));
 
@@ -76,6 +75,9 @@ function renderRoute() {
   home.hidden = Boolean(area);
   detail.hidden = !area;
   document.querySelector('#product-catalog').hidden = key !== 'deportes';
+  document.querySelector('.detail-layout').classList.toggle('catalog-route', key === 'deportes');
+  document.querySelector('.detail-side').hidden = key === 'deportes';
+  document.querySelector('#detail-description').hidden = key === 'deportes';
   resetProducts();
   document.title = area ? `${area.title} · Carahue` : 'Carahue · Cerca de tu bienestar';
   if (area) {
