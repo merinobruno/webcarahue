@@ -46,11 +46,9 @@ function renderProducts() {
   const cards = visible.map(product => {
     const article = document.createElement('article'); article.className = 'product-card';
     const symbol = document.createElement('span'); symbol.className = 'product-symbol'; symbol.setAttribute('aria-hidden', 'true'); symbol.textContent = product.symbol;
-    const category = document.createElement('p'); category.className = 'eyebrow'; category.textContent = product.category === 'entrenamiento' ? 'ENTRENAMIENTO' : 'INDUMENTARIA';
     const title = document.createElement('h3'); title.textContent = product.name;
-    const description = document.createElement('p'); description.textContent = product.description;
     const link = document.createElement('a'); link.className = 'text-link'; link.href = channels.deportes.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Consultar disponibilidad ↗'; link.setAttribute('aria-label', `Consultar disponibilidad de ${product.name} por WhatsApp`);
-    article.append(symbol, category, title, description, link); return article;
+    article.append(symbol, title, link); return article;
   });
   document.querySelector('#product-grid').replaceChildren(...cards);
   document.querySelector('#product-empty').hidden = visible.length > 0;
@@ -81,12 +79,9 @@ function renderRoute() {
   resetProducts();
   document.title = area ? `${area.title} · Carahue` : 'Carahue · Cerca de tu bienestar';
   if (area) {
-    document.querySelector('#detail-eyebrow').textContent = `${area.number} / NUESTRAS ESPECIALIDADES`;
     document.querySelector('#detail-title').textContent = area.title;
-    document.querySelector('#detail-description').textContent = area.description;
+    document.querySelector('#detail-description').textContent = area.body;
     document.querySelector('#detail-symbol').textContent = area.symbol;
-    document.querySelector('#detail-subtitle').textContent = area.subtitle;
-    document.querySelector('#detail-body').textContent = area.body;
     const list = document.querySelector('#detail-items');
     list.replaceChildren(...area.items.map(item => { const li = document.createElement('li'); li.textContent = item; return li; }));
     document.querySelector('#detail-contact').href = channels[key].url;
