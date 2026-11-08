@@ -11,3 +11,4 @@
 .area-card{min-height:205px}.area-icon{margin-top:14px;margin-bottom:30px}.area-card h3{margin-bottom:0}.story-heading{margin-top:18px}.story h3{margin:0}.product-card h3{margin-bottom:26px}.detail-side ul{margin-top:0}.contact-panel label{margin-top:0}.contact-alternative{justify-content:flex-start}
 @media(max-width:760px){.area-card{min-height:175px}.area-icon{margin-top:12px;margin-bottom:27px}.story{grid-template-columns:1fr;gap:15px}.story-img{grid-row:auto}.story-heading{margin-top:0}.story-heading>span{display:block}}/* The catalog presents the sports lines without a duplicate introduction. */
 .detail-layout.catalog-route{grid-template-columns:1fr}.catalog-route h1{margin-bottom:30px}.contact-button{margin-top:20px}
+.reel-cover{max-width:361px;margin-inline:auto}.story-heading time{display:block;font-size:11px;color:var(--muted);margin-bottom:8px}

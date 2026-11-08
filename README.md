@@ -25,3 +25,13 @@ The original website domain was not usable during research and is not linked. No
 ## Verification
 
 Run `node --check dist/app.js` and `node verify.mjs`. Browser QA should cover six specialty routes, browser back, mobile navigation, FAQ keyboard interaction, WhatsApp selection, catalog search/filter/empty-state/reset, image loading, and horizontal overflow. External messages should not be sent during QA.
+
+## Instagram snapshot — November 8, 2026
+
+News uses the three latest non-pinned posts verified on the live profile, including the collaborative Amplitone post. This is a manually curated snapshot; automatic Instagram integration is deferred.
+
+- November 5: https://www.instagram.com/carahuesrl/p/DfXyExzD-nj/ — original 1440 × 1800 WebP.
+- November 5: https://www.instagram.com/amplitone.centros.auditivos/reel/DfXRW51SjbP/ — original 361 × 640 reel cover; Carahue is a visible collaborator.
+- October 31: https://www.instagram.com/carahuesrl/reel/DfKqwQFR5NO/ — original 361 × 640 reel cover.
+
+Downloaded assets are copied unchanged, with native proportions and no cover upscaling. The favicon is the user's supplied 208 × 211 PNG, copied byte-for-byte under a new filename to avoid the previous icon cache.
