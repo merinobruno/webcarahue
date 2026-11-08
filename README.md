@@ -2,6 +2,10 @@
 
 Buildless Spanish institutional website. Serve `dist` with any static HTTP server. No dependencies, backend, cookies, visitor storage, or analytics are required.
 
+## Vercel deployment
+
+Use the repository root as the Vercel project Root Directory and `main` as its production branch. `vercel.json` serves `dist` without installation or a build step. Connect the existing `webcarahue` project to `merinobruno/webcarahue` to deploy pushes automatically.
+
 ## Scope and behavior
 
 - Responsive home page, company introduction, six specialty views with shareable hash URLs, official social links, FAQ, phone links, and area-specific WhatsApp routing.
