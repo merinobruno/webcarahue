@@ -6,7 +6,11 @@ The specialty landing uses imagery from Carahue's published Instagram content. S
 
 ## Vercel deployment
 
-Use the repository root as the Vercel project Root Directory and `main` as its production branch. `vercel.json` serves `dist` without installation or a build step. Connect the existing `webcarahue` project to `merinobruno/webcarahue` to deploy pushes automatically.
+Production URL: https://www.ortopediacarahue.com. The apex domain redirects to `www` with HTTP 308. The `webcarahue` Vercel project is connected to `merinobruno/webcarahue`; pushes to `main` automatically deploy updates to the production domain. Use the repository root as Root Directory; `vercel.json` serves `dist` without installation or a build step.
+
+cPanel manages DNS for the website. Its existing static copy is retained only as a fallback; routine updates do not require manual uploads. Website DNS: apex A `216.198.79.1`, `www` CNAME `6239a033b76fdbb7.vercel-dns-017.com`. HTTPS is active for both domain names.
+
+Keep mail independent of the website: `mail` A `45.227.160.40`, MX `mail.ortopediacarahue.com` with priority `0`, and SPF `v=spf1 ip4:45.227.160.40 +mx ~all`. Preserve the existing DKIM records.
 
 ## Scope and behavior
 
