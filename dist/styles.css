@@ -50,7 +50,7 @@
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .specialty-panels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));height:clamp(560px,calc(100svh - 130px),860px)}
 .specialty-panel{--panel-tint:0,68,55;position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;color:#fff;background:rgb(var(--panel-tint));text-align:center}
-.specialty-panel img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:var(--photo-position,center);transition:transform .55s ease,filter .4s ease;filter:saturate(.65)}
+.specialty-panel img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:var(--photo-position,center);transform-origin:var(--photo-position,center);transition:transform .55s ease,filter .4s ease;filter:saturate(.65)}
 .specialty-panel:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(var(--panel-tint),.62),rgba(var(--panel-tint),.76));transition:opacity .4s ease}
 .panel-cirugia{--panel-tint:28,60,63}.panel-audifonos{--panel-tint:52,79,63}.panel-estetica{--panel-tint:104,77,45}.panel-deportes{--panel-tint:120,65,21}.panel-alquileres{--panel-tint:44,76,64}
 .panel-content{width:100%;padding:25px 12px;position:relative;z-index:0}
@@ -61,7 +61,7 @@
 .panel-arrow{position:absolute;right:22px;bottom:27px;font-size:30px;line-height:1;opacity:0;transition:transform .35s ease,opacity .35s ease}
 @media(min-width:761px){
 .specialty-panel:focus-visible:before{opacity:.24}
-.specialty-panel:focus-visible img{transform:scale(1.055);filter:saturate(1) brightness(1.08)}
+.specialty-panel:focus-visible img{transform:scale(1.02);filter:saturate(1) brightness(1.08)}
 .specialty-panel:focus-visible .panel-content:before{opacity:1}
 .specialty-panel:focus-visible .panel-icon{opacity:1;transform:translateY(0) scale(1)}
 .specialty-panel:focus-visible h2{top:24px;transform:scale(1.055)}
@@ -70,7 +70,7 @@
 }
 @media(min-width:761px) and (hover:hover) and (pointer:fine){
 .specialty-panel:hover:before{opacity:.24}
-.specialty-panel:hover img{transform:scale(1.055);filter:saturate(1) brightness(1.08)}
+.specialty-panel:hover img{transform:scale(1.02);filter:saturate(1) brightness(1.08)}
 .specialty-panel:hover .panel-content:before{opacity:1}
 .specialty-panel:hover .panel-icon{opacity:1;transform:translateY(0) scale(1)}
 .specialty-panel:hover h2{top:24px;transform:scale(1.055)}
@@ -92,6 +92,6 @@
   .panel-arrow{right:21px;bottom:calc(50% - 15px);opacity:1}
   .specialty-panel img{object-position:var(--mobile-photo-position,var(--photo-position,center))}
 }
-.panel-ortopedia{--photo-position:70% 70%;--mobile-photo-position:50% 85%}.panel-cirugia{--photo-position:50% 50%;--mobile-photo-position:50% 60%}.panel-audifonos{--photo-position:72% 35%;--mobile-photo-position:50% 40%}.panel-estetica{--photo-position:60% 50%;--mobile-photo-position:60% 15%}.panel-deportes{--photo-position:35% 50%;--mobile-photo-position:45% 55%}.panel-alquileres{--photo-position:35% 40%;--mobile-photo-position:50% 45%}
+.panel-ortopedia{--photo-position:70% 70%;--mobile-photo-position:50% 85%}.panel-cirugia{--photo-position:50% 50%;--mobile-photo-position:50% 60%}.panel-audifonos{--photo-position:72% 35%;--mobile-photo-position:50% 40%}.panel-estetica{--photo-position:75% 50%;--mobile-photo-position:60% 15%}.panel-deportes{--photo-position:35% 50%;--mobile-photo-position:45% 55%}.panel-alquileres{--photo-position:35% 40%;--mobile-photo-position:50% 45%}
 .panel-content,.panel-arrow{text-shadow:0 2px 12px rgba(0,0,0,.35)}
 @media(prefers-reduced-motion:reduce){.specialty-panel *{transition:none!important;transform:none!important}}
