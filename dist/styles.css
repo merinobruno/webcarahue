@@ -92,6 +92,6 @@
   .panel-arrow{right:21px;bottom:calc(50% - 15px);opacity:1}
   .specialty-panel img{object-position:var(--mobile-photo-position,var(--photo-position,center))}
 }
-.panel-ortopedia{--photo-position:70% 70%;--mobile-photo-position:50% 85%}.panel-cirugia{--photo-position:50% 50%;--mobile-photo-position:50% 60%}.panel-audifonos{--photo-position:72% 35%;--mobile-photo-position:50% 40%}.panel-estetica{--photo-position:75% 50%;--mobile-photo-position:60% 15%}.panel-deportes{--photo-position:35% 50%;--mobile-photo-position:45% 55%}.panel-alquileres{--photo-position:35% 40%;--mobile-photo-position:50% 45%}
+.panel-ortopedia{--photo-position:70% 70%;--mobile-photo-position:50% 85%}.panel-cirugia{--photo-position:50% 50%;--mobile-photo-position:50% 60%}.panel-audifonos{--photo-position:72% 35%;--mobile-photo-position:50% 40%}.panel-estetica{--photo-position:18% 50%;--mobile-photo-position:40% 12%}.panel-deportes{--photo-position:35% 50%;--mobile-photo-position:45% 55%}.panel-alquileres{--photo-position:35% 40%;--mobile-photo-position:50% 45%}
 .panel-content,.panel-arrow{text-shadow:0 2px 12px rgba(0,0,0,.35)}
 @media(prefers-reduced-motion:reduce){.specialty-panel *{transition:none!important;transform:none!important}}
