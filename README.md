@@ -2,6 +2,8 @@
 
 Buildless Spanish institutional website. Serve `dist` with any static HTTP server. No dependencies, backend, cookies, visitor storage, or analytics are required.
 
+The specialty landing uses imagery from Carahue's published Instagram content. Source posts and image handling are recorded in [asset-sources.md](asset-sources.md).
+
 ## Vercel deployment
 
 Use the repository root as the Vercel project Root Directory and `main` as its production branch. `vercel.json` serves `dist` without installation or a build step. Connect the existing `webcarahue` project to `merinobruno/webcarahue` to deploy pushes automatically.
