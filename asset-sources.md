@@ -31,3 +31,7 @@ Downloaded 2026-11-09 for the six service panels. These are illustrative stock p
 | `dist/assets/area-alquileres.jpg` | Wheelchair mobility | [SHVETS production](https://www.pexels.com/photo/person-sitting-on-a-wheelchair-8415444/) | [Pexels](https://www.pexels.com/license/) |
 
 Images were resized and JPEG-compressed for web delivery. No generative edits were applied. Attribution is optional under the linked stock licenses; provenance is retained here. Pexels prohibits implying endorsement by depicted people or brands.
+
+## Client-supplied audiology imagery — November 12, 2026
+
+`dist/assets/phonak-audiologia.png` is the original 1080 × 1920 Phonak Virto mountains lifestyle image from the [client-provided Drive file](https://drive.google.com/file/d/15i0kVzNo__SVlu8LTnx9FeMuoMw_BsWi/view), in the [Audiología folder](https://drive.google.com/drive/folders/16fqOmyjM0iVUI4-l86lGsaQUKU4iPiaD). The audiology detail page displays the complete image at its original aspect ratio. It is campaign imagery, not a claim about Carahue staff or facilities. Rights remain with the original rights holders.

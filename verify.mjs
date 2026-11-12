@@ -13,11 +13,11 @@ for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   if (!/^(https?:|tel:)/.test(path)) assert.ok(existsSync(resolve(root, 'dist', path)), `Missing local asset: ${path}`);
 }
 for (const match of html.matchAll(/href="#([^"/]+)"/g)) assert.ok(ids.includes(match[1]), `Missing anchor: ${match[1]}`);
-for (const key of ['ortopedia', 'cirugia', 'audifonos', 'estetica', 'deportes', 'alquileres']) {
+for (const key of ['audiologia', 'cirugia', 'estetica', 'rehabilitacion', 'deportes']) {
   assert.ok(html.includes(`href="#area/${key}"`), `Missing area link: ${key}`);
   assert.ok(script.includes(`${key}: { title:`), `Missing area data: ${key}`);
 }
 for (const link of ['c05m4i', 'pnnjna', '8pdguh', 'v8d94i', 'rtgh5n']) assert.ok(script.includes(`https://wa.link/${link}`));
 assert.ok(!html.includes('mailto:'), 'Do not invent an email address');
 assert.ok(!html.includes('<form'), 'Contact routing must not imply server submission');
-console.log('Passed: unique ids, local assets, anchors, six specialty routes, five official contact channels, no fake form or email.');
+console.log('Passed: unique ids, local assets, anchors, five specialty routes, five official contact channels, no fake form or email.');

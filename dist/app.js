@@ -4,7 +4,7 @@ const channels = {
   atencion: { url: 'https://wa.link/c05m4i', description: 'Para consultas generales, productos y orientación.' },
   ortopedia: { url: 'https://wa.link/c05m4i', description: 'Atención al cliente te orientará con tu consulta de ortopedia.' },
   cirugia: { url: 'https://wa.link/rtgh5n', description: 'Continuá con el canal específico del área de cirugía.' },
-  audifonos: { url: 'https://wa.link/v8d94i', description: 'Continuá con el canal específico del área de audífonos.' },
+  audifonos: { url: 'https://wa.link/v8d94i', description: 'Continuá con el canal específico del área de audiología.' },
   estetica: { url: 'https://wa.link/c05m4i', description: 'Atención al cliente te orientará con tu consulta de estética.' },
   deportes: { url: 'https://wa.link/c05m4i', description: 'Consultá por productos deportivos y disponibilidad actual.' },
   alquileres: { url: 'https://wa.link/pnnjna', description: 'Consultá opciones, plazos y condiciones de alquiler.' },
@@ -12,13 +12,15 @@ const channels = {
 };
 
 const areas = {
-  ortopedia: { title: 'Ortopedia', number: '01', symbol: '◌', description: 'Acompañar tu movimiento, todos los días.', subtitle: 'Encontrá orientación para tu consulta.', body: 'Contactate con atención al cliente para conocer las opciones de ortopedia de Carahue y consultar disponibilidad.', items: ['Contanos qué producto o solución estás buscando.', 'Consultá modelos, medidas y condiciones antes de elegir.', 'Si necesitás un alquiler, también tenemos un canal específico.'] },
-  cirugia: { title: 'Cirugía', number: '02', symbol: '＋', description: 'Un canal específico para las consultas del área quirúrgica.', subtitle: 'La consulta, con el área indicada.', body: 'Carahue dispone de un contacto dedicado a cirugía. Comunicá tu consulta al equipo a través de su canal oficial.', items: ['Consultas sobre productos médicos del área.', 'Información de disponibilidad y condiciones.', 'Comunicación directa con el contacto de cirugía.'] },
-  audifonos: { title: 'Audífonos', number: '03', symbol: '◖))', description: 'Más cerca de lo que querés escuchar.', subtitle: 'Conversemos sobre tu consulta.', body: 'Accedé al canal de audífonos de Carahue para conocer las opciones y recibir información del área.', items: ['Consultá por las opciones de audífonos.', 'Solicitá información sobre la atención disponible.', 'Coordiná los próximos pasos con el equipo.'] },
-  estetica: { title: 'Estética', number: '04', symbol: '✧', description: 'Un espacio para tus consultas de estética.', subtitle: 'Conocé nuestra línea.', body: 'Consultá a atención al cliente por las opciones del área de estética. El equipo podrá orientarte sobre los productos y su disponibilidad.', items: ['Información sobre la línea de estética.', 'Consultas de productos y disponibilidad.', 'Orientación para contactar al área correspondiente.'] },
-  deportes: { title: 'Deportes', number: '05', symbol: '↝', description: 'Elementos para acompañar tu actividad y mantenerte en movimiento.', subtitle: 'Explorá nuestras líneas deportivas.', body: 'En nuestras comunicaciones compartimos estas líneas de productos. Consultá modelos, medidas, precios y disponibilidad actual con el equipo.', items: ['Pelotas de esferodinamia.', 'Mancuernas, pesas rusas y trampolines.', 'Bandas y tubos elásticos.', 'Camisetas térmicas y medias running de compresión.'] },
-  alquileres: { title: 'Alquileres', number: '06', symbol: '↺', description: 'Consultá alternativas según lo que necesitás.', subtitle: 'Un canal directo para alquileres.', body: 'Contanos qué estás buscando y durante cuánto tiempo. El área de alquileres te informará las opciones y condiciones disponibles.', items: ['Disponibilidad del producto que necesitás.', 'Plazos, requisitos y condiciones.', 'Coordinación de los próximos pasos con el área.'] }
+  audiologia: { title: 'Audiología', symbol: '◖))', body: 'Somos representantes exclusivos de Phonak, la marca líder a nivel mundial en soluciones auditivas, y te acompañamos a elegir la opción adecuada para vos.', items: ['Audífonos: Encontrá el audífono que mejor se adapta a tu audición y a tu día a día, con la tecnología y el respaldo de Phonak.', 'Accesorios y conectividad: Conectá tus audífonos a la TV, al celular o a micrófonos remotos para escuchar mejor en casa, en reuniones o en el aula.', 'Mantenimiento y repuestos: Nuestro servicio de posventa te acompaña con reparaciones, ajustes y consultas, para que tus audífonos rindan siempre al máximo.', 'Atención personalizada: Cada consulta es individual: nos tomamos el tiempo de conocerte, escucharte y acompañarte en cada paso del camino.'] },
+  cirugia: { title: 'Cirugías', symbol: '＋', body: 'Contactate directamente con nuestro equipo para consultas sobre productos del área de cirugías.', items: ['Consultá por el producto que necesitás.', 'Conocé las opciones y su disponibilidad.', 'Coordiná los próximos pasos con el área.'] },
+  estetica: { title: 'Estética', symbol: '✧', body: 'Conocé nuestras líneas de estética y consultá las opciones disponibles con el equipo.', items: ['BIND: fajas, tops y prendas postquirúrgicas.', 'Prótesis mamarias Silimed.', 'Consultá modelos, talles y disponibilidad.'] },
+  rehabilitacion: { title: 'Rehabilitación', symbol: '↺', body: 'Alquiler y venta de productos para acompañar tu rehabilitación.', items: ['Walkers.', 'Cabestrillos.', 'Sillas de ruedas.', 'Consultá disponibilidad y condiciones de alquiler o venta.'] },
+  deportes: { title: 'Deporte', symbol: '↝', body: 'Productos para acompañar tu actividad. Consultá modelos, precios y disponibilidad actual con el equipo.', items: ['Cintas Spider Tech.', 'Gel frío / calor.', 'Vendas.'] }
 };
+const routeAliases = { audifonos: 'audiologia', ortopedia: 'rehabilitacion', alquileres: 'rehabilitacion' };
+channels.audiologia = { ...channels.audifonos, description: 'Contactate directamente con nuestra área de audiología.' };
+channels.rehabilitacion = { ...channels.atencion, description: 'Consultá por venta de productos de rehabilitación. Para alquileres, elegí el canal de Alquileres.' };
 
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#main-nav');
@@ -29,6 +31,9 @@ document.addEventListener('keydown', event => { if (event.key === 'Escape' && na
 
 const contactArea = document.querySelector('#contact-area');
 const products = [
+  { name: 'Cintas Spider Tech', category: 'cuidado', symbol: '✳' },
+  { name: 'Gel frío / calor', category: 'cuidado', symbol: '◐' },
+  { name: 'Vendas', category: 'cuidado', symbol: '≋' },
   { name: 'Pelotas de esferodinamia', category: 'entrenamiento', symbol: '◯', description: 'Una línea para sumar movimiento a tu actividad.' },
   { name: 'Mancuernas y pesas rusas', category: 'entrenamiento', symbol: '↔', description: 'Consultá las opciones para tu entrenamiento.' },
   { name: 'Bandas y tubos elásticos', category: 'entrenamiento', symbol: '∞', description: 'Elementos para acompañar tus ejercicios.' },
@@ -63,12 +68,14 @@ function setChannel(key) {
   const channel = channels[key] || channels.atencion;
   contactArea.value = Object.hasOwn(channels, key) ? key : 'atencion';
   document.querySelector('#contact-link').href = channel.url;
+  document.querySelector('#contact-description').textContent = channel.description;
 }
 contactArea.addEventListener('change', () => setChannel(contactArea.value));
 
 function renderRoute() {
   closeMenu();
-  const key = location.hash.startsWith('#area/') ? location.hash.slice(6) : null;
+  const requestedKey = location.hash.startsWith('#area/') ? location.hash.slice(6) : null;
+  const key = routeAliases[requestedKey] || requestedKey;
   const area = Object.hasOwn(areas, key) ? areas[key] : null;
   const home = document.querySelector('#home-view');
   const detail = document.querySelector('#detail-view');
@@ -77,7 +84,9 @@ function renderRoute() {
   document.querySelector('#product-catalog').hidden = key !== 'deportes';
   document.querySelector('.detail-layout').classList.toggle('catalog-route', key === 'deportes');
   document.querySelector('.detail-side').hidden = key === 'deportes';
-  document.querySelector('#detail-description').hidden = key === 'deportes';
+  document.querySelector('#detail-description').hidden = false;
+  document.querySelector('#audiology-content').hidden = key !== 'audiologia';
+  document.querySelector('#rehabilitation-rental').hidden = key !== 'rehabilitacion';
   resetProducts();
   document.title = area ? `${area.title} · Carahue` : 'Carahue · Cerca de tu bienestar';
   if (area) {
@@ -87,6 +96,7 @@ function renderRoute() {
     const list = document.querySelector('#detail-items');
     list.replaceChildren(...area.items.map(item => { const li = document.createElement('li'); li.textContent = item; return li; }));
     document.querySelector('#detail-contact').href = channels[key].url;
+    document.querySelector('#detail-contact').textContent = key === 'audiologia' ? 'WhatsApp de Audiología ↗' : key === 'rehabilitacion' ? 'Consultar por venta ↗' : 'Consultar por WhatsApp ↗';
     setChannel(key);
     window.scrollTo({ top: 0, behavior: 'instant' });
     document.querySelector('#detail-title').focus({ preventScroll: true });
@@ -98,6 +108,7 @@ function renderRoute() {
     if (target) requestAnimationFrame(() => target.scrollIntoView());
   }
 }
+setChannel(contactArea.value);
 window.addEventListener('hashchange', renderRoute);
 renderRoute();
 document.querySelector('#year').textContent = new Date().getFullYear();

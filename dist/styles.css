@@ -48,7 +48,7 @@
 
 /* The landing panels are links; hover and keyboard focus reveal the same content. */
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
-.specialty-panels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));height:clamp(560px,calc(100svh - 130px),860px)}
+.specialty-panels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));height:clamp(560px,calc(100svh - 130px),860px)}
 .specialty-panel{--panel-tint:0,68,55;position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;color:#fff;background:rgb(var(--panel-tint));text-align:center}
 .specialty-panel img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:var(--photo-position,center);transform-origin:var(--photo-position,center);transition:transform .55s ease,filter .4s ease;filter:saturate(.65)}
 .specialty-panel:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(var(--panel-tint),.62),rgba(var(--panel-tint),.76));transition:opacity .4s ease}
@@ -56,7 +56,7 @@
 .panel-content{width:100%;padding:25px 12px;position:relative;z-index:0}
 .panel-content:before{content:"";position:absolute;inset:-130px -25px;z-index:-1;background:radial-gradient(ellipse at center,rgba(0,25,19,.8) 0%,rgba(0,25,19,.65) 28%,rgba(0,25,19,.2) 57%,transparent 76%);opacity:0;transition:opacity .4s ease;pointer-events:none}
 .panel-icon{position:absolute;left:calc(50% - 32px);bottom:calc(50% + 14px);width:64px;height:64px;opacity:0;transform:translateY(20px) scale(.7);transition:opacity .35s ease,transform .4s ease;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-.panel-content h2{position:relative;top:0;font-size:clamp(26px,2.2vw,36px);font-weight:500;color:inherit;letter-spacing:-.045em;line-height:1.2;white-space:nowrap;transition:top .4s ease,transform .4s ease}
+.panel-content h2{position:relative;top:0;font-size:clamp(24px,2.05vw,36px);font-weight:500;color:inherit;letter-spacing:-.045em;line-height:1.2;white-space:nowrap;transition:top .4s ease,transform .4s ease}
 .panel-description{position:absolute;top:calc(50% + 54px);left:12px;right:12px;font-size:17px;line-height:1.45;margin:0;opacity:0;transform:translateY(18px);transition:opacity .35s ease,transform .4s ease}
 .panel-arrow{position:absolute;right:22px;bottom:27px;font-size:30px;line-height:1;opacity:0;transition:transform .35s ease,opacity .35s ease}
 @media(min-width:761px){
@@ -95,3 +95,11 @@
 .panel-ortopedia{--photo-position:70% 70%;--mobile-photo-position:50% 85%}.panel-cirugia{--photo-position:50% 50%;--mobile-photo-position:50% 60%}.panel-audifonos{--photo-position:72% 35%;--mobile-photo-position:50% 40%}.panel-estetica{--photo-position:50% 50%;--mobile-photo-position:50% 20%}.panel-deportes{--photo-position:35% 50%;--mobile-photo-position:45% 55%}.panel-alquileres{--photo-position:35% 40%;--mobile-photo-position:50% 45%}
 .panel-content,.panel-arrow{text-shadow:0 2px 12px rgba(0,0,0,.35)}
 @media(prefers-reduced-motion:reduce){.specialty-panel *{transition:none!important;transform:none!important}}
+
+/* Content supplied by Carahue: five specialties and direct area contacts. */
+.audiology-content{margin-top:60px;border-top:1px solid var(--line);padding-top:45px}.audiology-help{max-width:680px}.audiology-help h2{font-size:34px}.audiology-help p{line-height:1.8;color:var(--muted)}.rental-link{display:block;width:fit-content;margin-top:20px}.rental-link[hidden]{display:none}.catalog-route #detail-description{grid-column:1/-1;grid-row:3;margin:20px 0 0;max-width:700px}
+@media(min-width:761px) and (max-width:1199px){.specialty-panels{grid-template-columns:repeat(6,minmax(0,1fr));height:auto}.specialty-panel{grid-column:span 2;min-height:300px}.specialty-panel:nth-last-child(-n+2){grid-column:span 3}.panel-content h2{font-size:30px}}
+@media(max-width:760px){.audiology-content{margin-top:35px;padding-top:30px}.audiology-help h2{font-size:30px}.panel-content h2{font-size:clamp(20px,6.5vw,26px)}}
+
+.audiology-intro{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:50px;align-items:center}.audiology-photo{display:block;width:100%;height:auto;border-radius:7px}.audiology-help .button{margin-top:12px}
+@media(max-width:760px){.audiology-intro{grid-template-columns:1fr;gap:28px}.audiology-photo{max-width:300px;margin-inline:auto}}
