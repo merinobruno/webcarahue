@@ -74,3 +74,9 @@ This revision supersedes the contained Silimed and dumbbell homepage composition
 Photo pages and the license were checked on November 14, 2026. The Pexels License permits free commercial website use and modification without mandatory attribution; these photographs are licensed stock, not asserted to be public domain. They illustrate the categories and do not identify Carahue staff, premises, inventory, BIND garments, or endorsers. The original garment photograph already excludes the model's face. No clinical procedure or outcome is implied.
 
 Downloaded from the original photo pages' `images.pexels.com` links, visually inspected, and proportionally resized to WebP quality 86: 1600 × 1067 (garment) and 800 × 1200 (dumbbells), approximately 97 KB combined. There are no generative edits, added blur, or runtime hotlinks. Responsive focal positions keep the garment and weights central in the area tiles.
+
+## Approved Estética image — November 14, 2026
+
+`dist/assets/area-estetica-amber-jars.webp` derives from the user-supplied `pexels-darina-belonogova-8789618.jpg`. The photograph shows unlabelled amber cosmetic jars and was visually inspected before use. The filename is retained as provenance only; no separate online author or license verification was performed for this supplied file. It illustrates the area without asserting that these are Carahue products.
+
+The photo is proportionally resized to WebP quality 88, with a 1200-pixel maximum edge. It fills the homepage Estética tile with `object-fit: cover`; desktop/mobile focal positions favor the prominent amber jar, and the existing color tint is reduced for this already-dark photograph. No generative edits or artificial blurred background were added. The user approved the desktop/mobile trial for publication; the preceding garment asset is retained.

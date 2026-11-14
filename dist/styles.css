@@ -124,7 +124,8 @@
 .panel-audifonos picture img{z-index:auto;object-fit:contain;object-position:center;transform:none!important}
 .panel-audifonos{background:#b3a99b}
 /* Full-bleed licensed photographs; no duplicate background or artificial blur. */
-.panel-estetica{--photo-position:53% 50%;--mobile-photo-position:53% 32%}
+.panel-estetica{--photo-position:65% 42%;--mobile-photo-position:65% 30%}
+.panel-estetica:before{background:linear-gradient(180deg,rgba(var(--panel-tint),.16),rgba(var(--panel-tint),.3))}
 .panel-deportes{--photo-position:50% 50%;--mobile-photo-position:50% 15%}
 @media(min-width:761px) and (max-width:1199px){
   .panel-audifonos picture img{object-fit:contain;object-position:center}
