@@ -50,3 +50,14 @@ The audiology introduction and homepage entry now use the supplied Audéo Sphere
 | `phonak-audiologia.webp` | [Virto mountains](https://drive.google.com/file/d/15i0kVzNo__SVlu8LTnx9FeMuoMw_BsWi/view) |
 
 WebP derivatives preserve the complete framing and aspect ratios; longest edge capped at 1080 pixels, quality 85. Combined transfer size is approximately 240 KB. The original committed Virto PNG remains available for provenance. No external Drive URLs are used as runtime image sources.
+
+## Homepage image correction — November 14, 2026
+
+The homepage no longer uses the square Audéo family scene, GelForm swimwear, or the Hoka gym interview. The latter depicts another business, not Carahue facilities. The Audéo image remains unchanged in the audiology detail page.
+
+- `phonak-pottery-portrait.webp`: client-supplied [Phonak Virto pottery campaign](https://drive.google.com/file/d/1Ocj6gqMf7ElGxb_dtu3SzRSj7ryyo-JQ/view), original 1080 × 1920, resized to 608 × 1080. Desktop uses contain to retain all three faces instead of cropping a square group into a narrow column.
+- `phonak-pottery-wide.webp`: same original, crop x=0, y=550, width=1080, height=600; resized to 900 × 500 for tablet/mobile rows. All three faces remain in this selected composition. No generative edits or image distortion.
+- `carahue-area-estetica.jpg`: restored [Carahue Silimed product post](https://www.instagram.com/carahuesrl/p/DLaW4inOq9X/), originally imported in commit `0a92c2b`; original campaign 1080 × 1350, product crop x=80, y=455, width=1000, height=535. Product photo replaces the model in swimwear.
+- `carahue-dumbbells.webp`: crop x=340, y=625, width=370, height=210 from existing `deportes.jpeg`, Carahue's public marketing reference collection described in README. The selected region contains dumbbells, excludes the campaign slogan and contact information, and does not imply a Carahue gym. No source upscaling.
+
+Product panels preserve the full photo in a contained foreground with a soft, blurred copy as the background; the product itself is never stretched or covered by a crop. Existing source images remain in the repository for provenance; current stock and compatibility still require consultation.
