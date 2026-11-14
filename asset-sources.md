@@ -90,3 +90,9 @@ The Spanish gallery descriptions summarize the manufacturer's primary sources, c
 - [Roger On](https://www.phonak.com/es-es/hearing-devices/microphones/roger-on) and [placement guidance](https://www.phonak.com/es-es/support-options/knowledge-base/articles/improve-understanding-using-roger-on): remote microphone intended for noise/distance situations, with tabletop and handheld pointing use.
 
 Copy does not claim universal compatibility, guaranteed clinical results, current stock, or generation-specific features. The shared availability/compatibility consultation note is retained.
+
+## Transparent favicon — November 14, 2026
+
+`dist/assets/favicon-carahue-transparent-20261114.png` replaces the opaque white-backed favicon reference. The original user-supplied `favicon-carahue-20261108.png` remains in the repository. The built-in ImageGen tool removed the white background using the instruction: "Remove the white background only; preserve the Carahue brand mark, silhouette and green/orange colors; output genuine transparency, without redesigning or adding elements."
+
+The generated result was inspected against white and dark backgrounds at favicon sizes, then proportionally downsampled to 128 × 128 PNG with its alpha channel preserved. The mark is visually recognizable but the generative edit is not asserted to be pixel-identical to the original. A new dated filename refreshes the browser favicon cache. No other site images were changed by this correction.
