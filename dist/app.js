@@ -86,6 +86,8 @@ function renderRoute() {
   document.querySelector('.detail-side').hidden = key === 'deportes';
   document.querySelector('#detail-description').hidden = false;
   document.querySelector('#audiology-content').hidden = key !== 'audiologia';
+  document.querySelector('#audiology-hero').hidden = key !== 'audiologia';
+  document.querySelector('.detail-layout').classList.toggle('audiology-route', key === 'audiologia');
   document.querySelector('#rehabilitation-rental').hidden = key !== 'rehabilitacion';
   resetProducts();
   document.title = area ? `${area.title} · Carahue` : 'Carahue · Cerca de tu bienestar';

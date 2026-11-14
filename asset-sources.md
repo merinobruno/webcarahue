@@ -35,3 +35,18 @@ Images were resized and JPEG-compressed for web delivery. No generative edits we
 ## Client-supplied audiology imagery — November 12, 2026
 
 `dist/assets/phonak-audiologia.png` is the original 1080 × 1920 Phonak Virto mountains lifestyle image from the [client-provided Drive file](https://drive.google.com/file/d/15i0kVzNo__SVlu8LTnx9FeMuoMw_BsWi/view), in the [Audiología folder](https://drive.google.com/drive/folders/16fqOmyjM0iVUI4-l86lGsaQUKU4iPiaD). The audiology detail page displays the complete image at its original aspect ratio. It is campaign imagery, not a claim about Carahue staff or facilities. Rights remain with the original rights holders.
+
+
+## Phonak gallery — November 14, 2026
+
+The audiology introduction and homepage entry now use the supplied Audéo Sphere campaign image. A visible accessory gallery contains TV Connector, PartnerMic and Roger On; the Virto lifestyle image remains beside the contact invitation. Campaign photographs do not portray Carahue staff. Product labels identify supplied assets, not a guarantee of stock or compatibility.
+
+| Local asset | Client-supplied Drive original |
+| --- | --- |
+| `phonak-audeo-sphere.webp` | [Audéo Sphere carnival](https://drive.google.com/file/d/1LJu_fpVOLKeaRjYglrVeBXvreGSS5HWO/view) |
+| `phonak-tv-connector.webp` | [TV Connector](https://drive.google.com/file/d/1AJlGh3j_hwq5t0rbDwa_jfaeAgjvnqA3/view) |
+| `phonak-partnermic.webp` | [PartnerMic](https://drive.google.com/file/d/1jtNu18cqXdTacR-ZovLuZIPnl_xBYcOi/view) |
+| `phonak-roger-on.webp` | [Roger On perspective](https://drive.google.com/file/d/14tUBgeUgY-1ONOCEbrKxhc_nq76iE3n6/view) |
+| `phonak-audiologia.webp` | [Virto mountains](https://drive.google.com/file/d/15i0kVzNo__SVlu8LTnx9FeMuoMw_BsWi/view) |
+
+WebP derivatives preserve the complete framing and aspect ratios; longest edge capped at 1080 pixels, quality 85. Combined transfer size is approximately 240 KB. The original committed Virto PNG remains available for provenance. No external Drive URLs are used as runtime image sources.

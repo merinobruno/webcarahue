@@ -103,3 +103,18 @@
 
 .audiology-intro{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:50px;align-items:center}.audiology-photo{display:block;width:100%;height:auto;border-radius:7px}.audiology-help .button{margin-top:12px}
 @media(max-width:760px){.audiology-intro{grid-template-columns:1fr;gap:28px}.audiology-photo{max-width:300px;margin-inline:auto}}
+
+/* Supplied Phonak imagery is visible from the audiology introduction onward. */
+.audiology-route{gap:36px 70px;align-items:center}
+.audiology-hero{width:100%;height:auto;border-radius:7px}
+.audiology-route .detail-side{grid-column:1/-1;padding:30px}
+.audiology-route .detail-symbol{display:none}
+.audiology-route .detail-side ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 40px;margin:0}
+.audiology-route .detail-side li+li{margin-top:0}
+.phonak-gallery{margin-bottom:55px}
+.phonak-gallery h2{font-size:34px;margin-bottom:28px}
+.phonak-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.phonak-products figure{margin:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:7px}
+.phonak-products img{width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.phonak-products figcaption{padding:20px 24px;border-top:1px solid var(--line);font-size:20px;font-weight:500;color:var(--green)}
+@media(max-width:760px){.audiology-route{gap:28px}.audiology-route .detail-side ul{grid-template-columns:1fr;gap:16px}.phonak-products{grid-template-columns:1fr;gap:20px}.phonak-products img{max-height:340px}.phonak-gallery h2{font-size:30px}.phonak-gallery{margin-bottom:35px}}
