@@ -80,3 +80,13 @@ Downloaded from the original photo pages' `images.pexels.com` links, visually in
 `dist/assets/area-estetica-amber-jars.webp` derives from the user-supplied `pexels-darina-belonogova-8789618.jpg`. The photograph shows unlabelled amber cosmetic jars and was visually inspected before use. The filename is retained as provenance only; no separate online author or license verification was performed for this supplied file. It illustrates the area without asserting that these are Carahue products.
 
 The photo is proportionally resized to WebP quality 88, with a 1200-pixel maximum edge. It fills the homepage Estética tile with `object-fit: cover`; desktop/mobile focal positions favor the prominent amber jar, and the existing color tint is reduced for this already-dark photograph. No generative edits or artificial blurred background were added. The user approved the desktop/mobile trial for publication; the preceding garment asset is retained.
+
+## Phonak accessory descriptions — November 14, 2026
+
+The Spanish gallery descriptions summarize the manufacturer's primary sources, checked on November 14, 2026:
+
+- [TV Connector](https://www.phonak.com/es-es/dispositivos-auditivos/accesorios/tv-connector-para-audifonos): TV/music streaming to compatible Phonak hearing aids.
+- [PartnerMic](https://www.phonak.com/es-es/dispositivos-auditivos/accesorios/partnermic) and [Phonak LATAM](https://intl.phonak.com/es-latam/producto/phonak-partnermic/): clothing-worn remote microphone for one-to-one conversations, transmitting the other person's voice to compatible hearing aids.
+- [Roger On](https://www.phonak.com/es-es/hearing-devices/microphones/roger-on) and [placement guidance](https://www.phonak.com/es-es/support-options/knowledge-base/articles/improve-understanding-using-roger-on): remote microphone intended for noise/distance situations, with tabletop and handheld pointing use.
+
+Copy does not claim universal compatibility, guaranteed clinical results, current stock, or generation-specific features. The shared availability/compatibility consultation note is retained.
