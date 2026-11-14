@@ -61,3 +61,16 @@ The homepage no longer uses the square Audéo family scene, GelForm swimwear, or
 - `carahue-dumbbells.webp`: crop x=340, y=625, width=370, height=210 from existing `deportes.jpeg`, Carahue's public marketing reference collection described in README. The selected region contains dumbbells, excludes the campaign slogan and contact information, and does not imply a Carahue gym. No source upscaling.
 
 Product panels preserve the full photo in a contained foreground with a soft, blurred copy as the background; the product itself is never stretched or covered by a crop. Existing source images remain in the repository for provenance; current stock and compatibility still require consultation.
+
+## Full-bleed stock replacements — November 14, 2026
+
+This revision supersedes the contained Silimed and dumbbell homepage compositions above. Both panels now use a single photograph with `object-fit: cover`; the blurred duplicate backgrounds and edge masks were removed. The other three area panels and specialty detail content are unchanged.
+
+| Local asset | Subject / original | Author | License |
+| --- | --- | --- | --- |
+| `dist/assets/area-estetica-garment.webp` | Neutral top and high-waisted garment; [Pexels photo 5747913](https://www.pexels.com/photo/woman-wearing-a-sports-bra-doing-yoga-5747913/) | cottonbro studio | [Pexels License](https://www.pexels.com/license/) |
+| `dist/assets/area-deporte-dumbbells.webp` | Blue dumbbells on a wooden floor; [Pexels photo 15442382](https://www.pexels.com/photo/close-up-of-dumbbells-15442382/) | Sergei Bezborodov | [Pexels License](https://www.pexels.com/license/) |
+
+Photo pages and the license were checked on November 14, 2026. The Pexels License permits free commercial website use and modification without mandatory attribution; these photographs are licensed stock, not asserted to be public domain. They illustrate the categories and do not identify Carahue staff, premises, inventory, BIND garments, or endorsers. The original garment photograph already excludes the model's face. No clinical procedure or outcome is implied.
+
+Downloaded from the original photo pages' `images.pexels.com` links, visually inspected, and proportionally resized to WebP quality 86: 1600 × 1067 (garment) and 800 × 1200 (dumbbells), approximately 97 KB combined. There are no generative edits, added blur, or runtime hotlinks. Responsive focal positions keep the garment and weights central in the area tiles.
